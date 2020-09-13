@@ -1,27 +1,59 @@
 body {
   background-image: url("../img/background.jpg");
   font-family: Arial, Helvetica, sans-serif;
-  font-size: xx-large;
   color: white;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
 
+i.fas,
+i.fab {
+  color: white;
+  padding-top: 5%;
+}
+i.fas:hover,
+i.fab:hover {
+  transform: scale(1.2);
+}
+
+#logo {
+  max-width: 100%;
+}
+
 .box {
   text-align: center;
-  display: block;
-  margin-left: auto;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-
-img {
-  max-width: 100%;
+.box:hover {
+  float: left;
+  list-style-type: none;
+  text-align: center;
+  padding-inline-start: 0;
+}
+.box ul {
+  float: left;
+  padding-inline-start: 0;
+}
+@media screen and (max-width: 768px) {
+  .box ul {
+    transform: translateX(50%);
+  }
+}
+.box ul li {
+  margin: 0 10px;
+  display: inline;
+}
+@media screen and (max-width: 768px) {
+  .box ul li {
+    display: block;
+    margin: 15px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
